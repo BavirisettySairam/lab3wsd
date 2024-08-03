@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">HMIS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reports.html">Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="membership-section container">
+            <style>
+            section{
+                background-image: url("https://www.clays.co.uk/wp-content/uploads/hero-books.jpg");
+            }
+            </style>
+            <h1>Registration Form</h1>
+            <form action="#" method="post" id="registrationform">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required pattern="[A-Za-z\s]{1,50}" title="Please enter only letters and spaces, up to 50 characters.">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Mobile Number:</label>
+                    <input type="number" class="form-control" id="number" name="number" required pattern="{1,9}"required>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender:</label><br>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="male" name="gender" value="male" required>
+                        <label class="form-check-label" for="male">Male</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="female" name="gender" value="female" required>
+                        <label class="form-check-label" for="female">Female</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Department:</label><br>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="fiction" name="interests" value="fiction">
+                        <label class="form-check-label" for="fiction">Ortho</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="non-fiction" name="interests" value="non-fiction">
+                        <label class="form-check-label" for="non-fiction">Neuro</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="non-fiction" name="interests" value="non-fiction">
+                        <label class="form-check-label" for="non-fiction">Cardio</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="membership">Treatment Type:</label>
+                    <select class="form-control" id="membership" name="membership" required>
+                        <option value="" disabled selected>Select a membership type</option>
+                        <option value="basic">General</option>
+                        <option value="premium">Insurance</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="text-center py-3">
+        <p>&copy; 2024 SAI. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('registrationform').addEventListener('submit', function(event) {
+            if (!this.checkValidity()) {
+                event.preventDefault();
+                alert('Please fill out the form correctly.');
+            } else {
+                alert('Form submitted');
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+

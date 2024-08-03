@@ -1,0 +1,131 @@
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-image: url("https://t3.ftcdn.net/jpg/04/13/79/28/360_F_413792844_yVqFfyQwi98ytDb4zEFUSsxjSuwTJxu7.jpg");
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaelKtNy51SgCaQYXdNpqD98SvCjOGHd3BNw&s') no-repeat center center;
+    background-size: cover;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-section{
+    text-align: center;
+    color: blue;
+    text-decoration: blueviolet;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    
+    padding: 10px;
+}
+.container
+{
+    width: 100%;
+    height: 100px;
+    background-image: url("https://img.freepik.com/free-photo/paper-note-frame-with-memphis-pattern-background_53876-119892.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1722384000&semt=ais_hybrid");
+}
+
+.headin
+{
+    text-align: center;
+}
+
+.book-item {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 200px;
+    text-align: center;
+}
+
+.gallery-item {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    display:flex;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+
+
+button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+form-group {
+    margin-bottom: 1rem;
+}
+form-check {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .book-item {
+        margin: 0 auto 10px;
+    }
+}
+img{
+    display:flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: white;
+    border: 5px solid white; 
+    justify-content: space-evenly;
+    height: 9 em;
+    width: 75%;
+
+    
+}
