@@ -129,3 +129,18 @@ img{
 
     
 }
+
+.svgpic{
+    height: 15em;
+    width:auto;
+    align-self: center;
+}
+
+.svgcls{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    
+}
+
